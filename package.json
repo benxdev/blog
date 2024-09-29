@@ -1,0 +1,25 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "A blog web application using node, express and ejs",
+  "main": "express.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benxdev/blog.git"
+  },
+  "author": "Benedict Uduogu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benxdev/blog/issues"
+  },
+  "homepage": "https://github.com/benxdev/blog#readme",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "ejs": "^3.1.10",
+    "express": "^4.21.0"
+  }
+}
