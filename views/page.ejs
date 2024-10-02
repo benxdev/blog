@@ -1,18 +1,89 @@
 <%- include("partials/header.ejs") %>
-    <h1>
-        Mental Bytes
-    </h1>
+<body>
+    <main>
+        <%- include("partials/navbar.ejs") %>
 
-    <p>
-        This is a place where I share my thoughts, experiences, and knowledge with the world.
-    </p>
+        <section id="home-page">
+            <div class="">
+                <h1>
+                    BEYOND THE CODE
+                </h1>
+                <p class="">A Personal Blog</p>
+                <h2 class="">
+                    Insights, Ideas, and Reflections from a Developer’s Mind
+                </h2>
+                <button class="">
+                    Read
+                </button>
+            </div>
+        </section>
 
-    <button class="createpost-btn" type="button">
-        <a href="/blog.ejs">See my thoughts</a>
-    </button>
+        <section id="articles-section">
+            <div id="articles" class="">
+                <div>
+                    
+                </div>
+                
+                <div id="feautured-article-column" class="">
+                    <h2 class="">
+                        Featured Article
+                    </h2>
 
-    <button class="blog-page-button" type="button">
-        <a href="/blog.ejs">See my thoughts</a>
-    </button>
-<%- include("partials/footer.ejs") %>
+                    <div class="feautured-article">
+                        <img src="" alt="" class="feautured-article-img">
+                        <h3>This is a somewhat long article title that takes one or two lines</h3>
+                        <p class="">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                            Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                            penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                            Donec quam felis, ultricies nec, pellentesque eu, t magnis dis parturient montes, 
+                            nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, 
+                            nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, 
+                        </p>
+                    </div>
+
+                    <button class="">
+                        Continue Reading
+                    </button>
+
+                </div>
+
+                <div id="recent-article-column" class="">
+                    <h2 class="">
+                        Recent Articles
+                    </h2>
+
+                    <div id="recent-article" class="">
+                        <img src="" alt="" class="recent-article-img">
+                        <h3>This is a somewhat long article title that takes one or two lines</h3>
+                    </div>
+
+                    <div id="recent-ariticle" class="recent-article-img">
+                        <img src="" alt="" class="">
+                        <h3>This is a somewhat long article title that takes one or two lines</h3>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="newsletter-section">
+            <div class="newsletter">
+                <h1>
+                    Stay up to date with the <span class="">articles,</span>
+                    Subscribe to the <span class="">Mental Bytes</span> newsletters
+                </h1>
+
+                <input type="text" placeholder="Enter your email address" class="newsletter-email">
+
+                <button class="">
+                    Submit
+                </button>
+            </div>
+        </section>
+
+
+    <%- include("partials/footer.ejs") %>  
+    </main>  
+</body>
+
 
