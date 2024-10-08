@@ -1,24 +1,20 @@
 {
-  "name": "blog",
+  "name": "tailwind-setup",
   "version": "1.0.0",
-  "description": "A blog web application using node, express and ejs",
-  "main": "express.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tailwindcss -i ./public/styles/input.css -o ./public/styles/css/main.css",
+    "watch": "tailwindcss -i ./public/styles/input.css -o ./public/styles/css/main.css --watch"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/benxdev/blog.git"
-  },
-  "author": "Benedict Uduogu",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/benxdev/blog/issues"
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^3.4.13"
   },
-  "homepage": "https://github.com/benxdev/blog#readme",
   "dependencies": {
-    "body-parser": "^1.20.3",
     "ejs": "^3.1.10",
     "express": "^4.21.0"
   }
