@@ -1,38 +1,43 @@
 <%- include("partials/header.ejs") %>
-<body>
-    <main>
+<body class="">
         <%- include("partials/navbar.ejs") %>
 
-        <section id="home-page">
+        <section id="home-page" class="bg-bgimage sm:bg-auto h-screen p-20">
             <div class="">
-                <h1 class="text-3xl font-bold underline">
+                <h1 class="text-60 md:mt-20 sm:mt-0 sm:leading-none text-lighttextcolor font-rubik">
                     BEYOND THE CODE
                 </h1>
-                <p class="">A Personal Blog</p>
-                <h2 class="">
+                <p class="text-18 mt-4 text-orangetextcolor font-bold">A Personal Blog</p>
+                <h2 class="text-18 text-lighttextcolor font-bold mt-20">
                     Insights, Ideas, and Reflections from a Developer’s Mind
                 </h2>
-                <button class="">
-                    Read
-                </button>
+
+                <!-- READ BUTTON -->
+                <a href="#" class="">
+                    <button class="px-6 py-2 mt-20 rounded-xl text-lighttextcolor bg-blackcolor hover:bg-lighttextcolor hover:text-blackcolor button">
+                        Contact
+                    </button>
+                </a>
             </div>
         </section>
 
-        <section id="articles-section">
-            <div id="articles" class="">
-                <div>
-                    
-                </div>
-                
-                <div id="feautured-article-column" class="">
+        <section id="articles-section" class="bg-white">
+
+            <!-- ARTICLES CONTAINER -->
+            <div id="articles" class="container flex flex-col-reverse md:flex-row mx-auto px-6 space-y-0 md:space-y-0">
+
+                <!-- FEATURED ARTICLE CHILD, LEFT ON LG SCREEN, BOTTOM ON SMALL SCREENS -->
+                <div id="feautured-article" class="">
                     <h2 class="">
                         Featured Article
                     </h2>
 
+                    <!-- FEAUTURED ARTICLE BODY, RIGHT ON LG SCREEN, TOP ON SMALL SCREENS -->
                     <div class="feautured-article">
-                        <img src="" alt="" class="feautured-article-img">
+                        <img src="/images/sky.jpeg" alt="" class="feautured-article-img">
                         <h3>This is a somewhat long article title that takes one or two lines</h3>
-                        <p class="">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                        <p class="">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
                             Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
                             penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
                             Donec quam felis, ultricies nec, pellentesque eu, t magnis dis parturient montes, 
@@ -44,21 +49,21 @@
                     <button class="">
                         Continue Reading
                     </button>
-
                 </div>
-
+                
+                <!-- RECENT ARTICLES -->
                 <div id="recent-article-column" class="">
                     <h2 class="">
                         Recent Articles
                     </h2>
 
                     <div id="recent-article" class="">
-                        <img src="" alt="" class="recent-article-img">
+                        <img src="/images/towers.jpg" alt="" class="recent-article-img">
                         <h3>This is a somewhat long article title that takes one or two lines</h3>
                     </div>
 
                     <div id="recent-ariticle" class="recent-article-img">
-                        <img src="" alt="" class="">
+                        <img src="/images/tunnel.jpg" alt="" class="">
                         <h3>This is a somewhat long article title that takes one or two lines</h3>
                     </div>
                 </div>
@@ -82,8 +87,7 @@
         </section>
 
 
-    <%- include("partials/footer.ejs") %>  
-    </main>  
+    <%- include("partials/footer.ejs") %>
 </body>
 
 

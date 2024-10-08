@@ -1,12 +1,24 @@
-<nav>
-    <div>
-        <h1>
-            MENTAL BYTES
-        </h1>
-    <ul>
-        <li>Home</li>
-        <li>Posts</li>
-        <li>About</li>
-        <li>Contact</li>
-    </ul>
+<nav class="relative container mx-auto px-20 bg-bgcolor">
+
+    <div class="flex items-center justify-between">
+
+        <!-- LOGO -->
+        <div class="">
+            <h1 class="text-24 text-orangetextcolor font-rubik">
+                MENTAL BYTES
+            </h1>    
+        </div>
+
+        <!-- MENU ITEMS -->
+        <div class="hidden md:flex space-x-10">
+            <a href="#" class="hover:text-orangetextcolor hover:font-bold text-16 text-lighttextcolor">Home</a>
+            <a href="#" class="hover:text-orangetextcolor hover:font-bold text-16 text-lighttextcolor">Articles</a>
+            <a href="#" class="hover:text-orangetextcolor hover:font-bold text-16 text-lighttextcolor">About</a>
+            <a href="#" class="text-16 text-lighttextcolor">
+                <button class="px-6 pt-2 pb-3 text-16 rounded-xl text-lighttextcolor bg-blackcolor hover:bg-lighttextcolor hover:text-blackcolor button">
+                    Subscribe
+                </button>
+            </a>
+        </div>
+    </div>
 </nav>
